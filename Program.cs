@@ -17,6 +17,16 @@ class Program
 {
     static void Main(string[] args)
     {
-        
+        String[] garage={ "Banshee", "Zentorno", "Sultan" , "Sanchez" , "Buzzard" };
+        for (int i=0; i<garage.Length; i++)
+        {
+            Console.WriteLine((i + 1).ToString() + "." + garage[i]);
+        }
+        Console.WriteLine("Dis moi ton choix entre 1 et 5 ");
+        int choose=Convert.ToInt32(Console.ReadLine());
+        string car=System.Array.IndexOf(garage.[choose]);
+        Console.WriteLine("Tu as choisi  " +car);
+        Console.WriteLine("Donne lui un nouveau nom");
+        String rename = Console.ReadLine();
     }
 }
